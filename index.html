@@ -10,6 +10,22 @@
     <script src="app.js" defer></script>
 </head>
 <body>
+    <div class="loader-con">
+        <div class="loader">
+            <div class="nav-logo">
+                <img src="./Assets/logo-bold-black.png" alt=""> <p>KEVYN</p>
+            </div>
+            <div class="loader-dots">
+                <div class="dots1"></div>
+                <div class="dots2"></div>
+                <div class="dots3"></div>
+            </div>
+            <div class="loader-text">
+                Please wait...
+            </div>
+        </div>
+      </div>
+    <!-- -------------------------------------------------------- NAVBAR -------------------------------------------------------- -->
     <nav>
         <div class="navbar">
             <div class="nav-logo">
@@ -17,27 +33,30 @@
             </div>
             <div class="nav-link">
                 <ul>
-                    <li><a href="#welc">Home</a></li>
-                    <li><a href="#desc">About</a></li>
-                    <li><a href="#proj">Projects</a></li>
-                    <li><a href="#cont">Contact</a></li>
+                    <li><a href="#welc" class="link fancy">Home</a></li>
+                    <li><a href="#desc" class="link fancy">About</a></li>
+                    <li><a href="#proj" class="link fancy">Projects</a></li>
+                    <li><a href="#cont" class="link fancy">Contact</a></li>
                 </ul>
             </div>
             <div class="nav-menu-btn">
                 <ion-icon name="menu"></ion-icon>
             </div>
         </div>
-
+        <!-- ----------------------------------------- NAVBAR DROPDOWN/RESPONSIVE ----------------------------------------- -->
         <div class="nav-dropdown">
             <ul>
-                <li><a href="#welc">Home</a></li>
-                <li><a href="#desc">About</a></li>
-                <li><a href="#proj">Projects</a></li>
-                <li><a href="#cont">Contact</a></li>
+                <li><a href="#welc" class="link fancy">Home</a></li>
+                <li><a href="#desc" class="link fancy">About</a></li>
+                <li><a href="#proj" class="link fancy">Projects</a></li>
+                <li><a href="#cont" class="link fancy">Contact</a></li>
             </ul>
         </div>
     </nav>
+
+    <!-- -------------------------------------------------------- MAIN CONTENT -------------------------------------------------------- -->
     <main>
+        <!-- ----------------------------------------- WELCOME TEXT ----------------------------------------- -->
         <div class="welcome-con" id="welc">
             <div class="empty-con"></div>
             <div class="welcome" id="text">
@@ -53,6 +72,7 @@
             </div>
             <div class="empty-con"></div>
         </div>
+        <!-- ----------------------------------------- DESCRIPTION TEXT ----------------------------------------- -->
         <div class="description-con" id="desc">
             <div class="empty-con"></div>
             <div class="description">
@@ -97,6 +117,7 @@
             </div>
             <div class="empty-con"></div>
         </div>
+        <!-- ----------------------------------------- TOOLS CONTAINER ----------------------------------------- -->
         <div class="tools-con">
             <h2>Tools</h2>
             <div class="tools-list">
@@ -138,6 +159,7 @@
                 </div>
             </div>
         </div>
+        <!-- ----------------------------------------- PROJECT SHOWCASE ----------------------------------------- -->
         <div class="project-con" id="proj">
             <div class="empty-con"></div>
             <div class="project">
@@ -151,7 +173,9 @@
                 </div>
                 <div class="project-list">
                     <div class="project-card">
-                        <img src="./Assets/img-placeholder.png" alt="">
+                        <a href="https://nyvee.github.io">
+                            <img src="./Assets/project-1.png" alt="">
+                        </a>
                         <div class="card-text">
                             <h1>Portfolio Web</h1>
                             <p>
@@ -207,7 +231,10 @@
             <div class="empty-con"></div>
         </div>
     </main>
-    <div class="footer">
+    
+    <!-- -------------------------------------------------------- FOOTER CONTENT -------------------------------------------------------- -->
+    <footer>
+        <!-- ----------------------------------------- CONTACT CONTAINER ----------------------------------------- -->
         <div class="contact-con" id="cont">
             <div class="contact">
                 <a href="#">
@@ -235,12 +262,13 @@
                 </a>
             </div>            
         </div>
+        <!-- ----------------------------------------- COPYRIGHTS ----------------------------------------- -->
         <div class="copyright">
             <p>
                 © 2023 nyvee.inc. All rights reserved
             </p>
         </div>
-    </div>
+    </footer>
 <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
