@@ -22,7 +22,7 @@
     flex-direction: column;
     padding: 0 2rem 0 2rem;
     gap: 3rem;
-    align-items: start;
+    align-items: flex-start;
   }
 
   .columnTwo img {
