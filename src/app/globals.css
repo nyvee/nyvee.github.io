@@ -335,3 +335,67 @@ body {
   font-size: 1rem;
   font-weight: 500;
 }
+
+@media screen and (max-width: 1024px) {
+  .hero-title {
+    font-size: 10rem;
+  }
+
+  .hero-subtitle {
+    font-size: 2rem;
+  }
+
+  .section-title {
+    font-size: 3rem;
+  }
+
+  .scroll-text {
+    font-size: 5rem;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .hero-title {
+    font-size: 5rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1.5rem;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .scroll-text {
+    font-size: 3rem;
+  }
+
+  .project-item {
+    min-width: 300px;
+  }
+
+  .project-list {
+    padding-bottom: 0;
+  }
+
+  .project-link {
+    margin: 2rem 0 1rem 0;
+  }
+
+  .graphic-design-item.small {
+    aspect-ratio: 300 / 400;
+  }
+
+  .graphic-design-item.large {
+    aspect-ratio: 400 / 500;
+  }
+
+  .section-divider {
+    width: 30px;
+  }
+
+  .footer {
+    font-size: 0.5rem;
+  }
+}

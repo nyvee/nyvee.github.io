@@ -55,13 +55,25 @@ export default function ProjectDetails() {
     notFound();
   }
 
-
   useEffect(() => {
-    document.body.style.overflow = "hidden";
+    const handleResize = () => {
+      if (window.innerWidth >= 1025) {
+        document.body.style.overflow = "hidden";
+      } else {
+        document.body.style.overflow = "auto";
+      }
+    };
+  
+    handleResize();
+    window.addEventListener("resize", handleResize);
+  
     return () => {
-      document.body.style.overflow = "auto";
+      document.body.style.overflowY = "auto";
+      document.body.style.overflowX = "hidden";
+      window.removeEventListener("resize", handleResize);
     };
   }, []);
+  
 
   return (
     <motion.main 

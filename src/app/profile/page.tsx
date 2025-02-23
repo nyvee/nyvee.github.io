@@ -91,7 +91,7 @@ export default function Profile() {
         </div>
         <div className={styles.aboutGrid}>
           <p className={`${styles.aboutContent} ${styles.first}`}>
-            I&apos;m Kevyn Octavian, a 6th-semester Informatics student with a strong passion for continuous learning and adaptability. A fast learner with a keen interest in Data Analysis, Data Science, UI/UX Design, and Android App Development, I have solid experience in UI/UX freelance projects. Detail-oriented and an effective communicator, I thrive in teamwork and problem-solving environments, ensuring efficiency and collaboration...
+            I&apos;m Kevyn Octavian, a 6th-semester Informatics student with a strong passion for continuous learning and adaptability. A fast learner with a keen interest in Data Analysis, Data Science, UI/UX Design, and Android App Development, I have solid experience in UI/UX freelance projects. Detail-oriented and an effective communicator, I thrive in teamwork and problem-solving environments, ensuring efficiency and collaboration.
           </p>
           <p className={`${styles.aboutContent} ${styles.second}`}>
             Proficient in UI/UX design with Figma, I specialize in mobile application development using Flutter and Kotlin, alongside expertise in data analysis, machine learning, automation, and data visualization with Python. I have experience in project management using Agile methodologies and web development with HTML, CSS, JavaScript, ReactJS, and Next.js. Additionally, I excel in critical thinking, communication, teamwork, adaptability, time management, and fast learning. In my free time, I enjoy exploring graphic design, creating visuals that blend creativity with functionality.
@@ -109,19 +109,19 @@ export default function Profile() {
         </div>
         <div className={styles.socialGrid}>
           <a href="https://www.linkedin.com/in/kevynoctavian/" className={`${styles.socialLink} ${styles.linkedin}`}>LinkedIn
-            <Image src="arrow_outward c.svg" alt="LinkedIn" width={128} height={128} />
+            <Image src="arrow_outward c.svg" alt="LinkedIn" className={styles.socialArrow} width={128} height={128} />
           </a>
           <a href="https://dribbble.com/kevynoctavian" className={`${styles.socialLink} ${styles.dribbble}`}>Dribbble
-            <Image src="arrow_outward c.svg" alt="Dribbble" width={128} height={128} />
+            <Image src="arrow_outward c.svg" alt="Dribbble" className={styles.socialArrow} width={128} height={128} />
           </a>
           <a href="https://github.com/nyvee" className={`${styles.socialLink} ${styles.github}`}>Github
-            <Image src="arrow_outward c.svg" alt="Github" width={128} height={128} />
+            <Image src="arrow_outward c.svg" alt="Github" className={styles.socialArrow} width={128} height={128} />
           </a>
           <a href="https://www.behance.net/kevynoctavian" className={`${styles.socialLink} ${styles.behance}`}>Behance
-            <Image src="arrow_outward c.svg" alt="Behance" width={128} height={128} />
+            <Image src="arrow_outward c.svg" alt="Behance" className={styles.socialArrow} width={128} height={128} />
           </a>
           <a href="https://www.upwork.com/freelancers/~0162b33b3e35bcb1cd?mp_source=share" className={`${styles.socialLink} ${styles.upwork}`}>Upwork
-            <Image src="arrow_outward c.svg" alt="Upwork" width={128} height={128} />
+            <Image src="arrow_outward c.svg" alt="Upwork" className={styles.socialArrow} width={128} height={128} />
           </a>
         </div>
       </section>

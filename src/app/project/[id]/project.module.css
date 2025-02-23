@@ -66,3 +66,46 @@
     position: fixed;
     bottom: 0;
   }
+
+@media screen and (max-width: 1024px) {
+  .projectContent {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .projectTitle {
+    font-size: 3rem;
+  }
+
+  .columnTwo {
+    padding: 0;
+  }
+
+  .columnTwo img {
+    width: 100%;
+  }
+
+  .footerPosition {
+    position: relative;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .projectContent {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .projectTitle {
+    font-size: 2rem;
+
+  }
+
+  .projectInfo {
+    font-size: 1.2rem;
+  }
+
+  .projectDesc {
+    font-size: 1.2rem;
+  }
+}
