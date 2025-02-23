@@ -1,6 +1,6 @@
 'use client';
 
-import { notFound } from "next/navigation";
+import { notFound, useParams } from "next/navigation";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
@@ -47,17 +47,19 @@ const projects = [
   },
 ];
 
-export default function ProjectDetails({ params }: { params: { id: string } }) {
+export default function ProjectDetails() {
+  const params = useParams();
   const project = projects.find((p) => p.id === params.id);
 
   if (!project) {
     notFound();
   }
 
+
   useEffect(() => {
-    document.body.style.overflow = "hidden"; // Prevent scrolling
+    document.body.style.overflow = "hidden";
     return () => {
-      document.body.style.overflow = "auto"; // Restore scrolling when leaving
+      document.body.style.overflow = "auto";
     };
   }, []);
 
